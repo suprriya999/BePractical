@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>translate3d</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            padding: 30px;
+            background-color: teal;
+            color: #fff;
+            transition: all 5s;
+        }
+        .blk:hover{
+            transform: translate3d(500px,200px,300px);/*Standerd IE*/
+            -webkit-transform: translate3d(500px,200px,300px);/*Chrome Edge */
+            -moz-transform: translate3d(500px,200px,300px);/*Mozilla firefox*/
+            -o-transform: translate3d(500px,200px,300px);/*Opera*/
+        }
+    </style>
+</head>
+<body>
+    <h3>translate3d()</h3>
+    <div class="blk">Lorem ipsum dolor sit amet, consectetur adipisicing elit.lo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo aut sunt, laudantium quidem distinctio asperiores totam quasi fugiat mollitia animi itaque voluptates eaque blanditiis corporis cumque ea natus quisquam incidunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium cumque molestiae tempore quia, mollitia consectetur modi esse fugiat illo possimus, fugit eius quas rem temporibus commodi. Fuga mollitia magnam adipisci! Aut commodi maiores ad, harum eum suscipit optio nostrum dicta nulla iste. Blanditiis dolorum earum ad autem magnam. Aliquid et accusamus fuga.</div>
+</body>
+</html>

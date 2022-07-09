@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            border:  1px solid #222;
+            padding: 10px 12px 10px 14px;
+            counter-reset: ch;
+        }
+        h1::before{
+            counter-increment: ch;
+            content: counter(ch)". ";
+        }
+        h1{
+            counter-reset: top; 
+        }
+        h3::before{
+            counter-increment: top;
+            content: counter(ch)"."counter(top)" ";
+            margin-left: 20px;
+        }
+        h3{
+            counter-reset: sub;
+        }
+        h5::before{
+            counter-increment: sub;
+            content: counter(ch)". "counter(top)". "counter(sub);
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>HTML</h1>
+          <h3>Header Tags</h3>
+           <h5>h1-h6</h5>
+          <h3>Format Tag</h3>
+           <h5>paragraph</h5>
+           <h5>address</h5>
+          <h3>Link and Buttone Tags</h3>
+          <h3>Table and List</h3>
+        <H1>CSS</H1>
+          <h3>Selectors</h3>
+          <h3>Background</h3>
+          <h3>Color and Fornt</h3>
+           <h5>Background colour</h5>
+        <h5>border color</h5>
+        <h5>colour</h5>
+        <h5>font family</h5>
+        <h3>Overflow and opacity</h3>
+        <h3>text and float</h3>
+        <H1>JAVASCRIPT</H1>
+        <h3>introduction</h3>
+        <h3>Operation</h3>
+        <h3>Conditional loops</h3>
+        <h3>arrays</h3>
+        <h5>Literal</h5>
+        <h5>Objects</h5>
+        <h5>Json</h5>
+        <h3>function</h3>
+        <h1>React JS</h1>
+        <h3>React Components</h3>
+        <h5>Functional compunets</h5>
+        <h5>ClassComponents</h5>
+        <h5>Const function components</h5>
+        <h3>React Hooks</h3>
+        <H3>React Lifecycle Methods</H3>
+        <h5>Mounting</h5>
+        <h5>Updating</h5>
+        <h5>UnMon</h5>
+    </section>    
+</body>
+</html>

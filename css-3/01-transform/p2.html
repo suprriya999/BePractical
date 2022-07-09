@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scale</title>
+    <style>
+        body{
+            width: 100%;
+            overflow-x:hidden ;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            /* margin: 10px; */
+            transition: all 2s;
+            margin: auto;
+        }
+        .b1{ background-color: rosybrown;}
+        .b2{ background-color: slateblue;}
+        .b3{ background-color: saddlebrown;}
+        .b1:hover{transform: scale(2,2.5);
+            border-color: orange;}
+        .b2:hover{ transform: scaleX(3);}
+        .b3:hover{ transform: scaleY(3);}    
+
+    </style>
+</head>
+<body>
+    <h1>Scale(X,y)</h1>
+    <div class="b1">
+        <p>Content here</p>
+    </div>
+    <div class="b2"></div>
+    <div class="b3"></div>
+</body>
+</html>

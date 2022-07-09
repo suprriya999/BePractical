@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: red;
+            display: block;
+        }
+        .container span{
+            background-color: #222;
+            color: #ffff;
+            margin: 1px;
+        }
+        div,span{
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span>First</span>
+        <span>Second</span>
+        <span>Third</span>
+    </div>
+    <div class="container">
+        <span>First</span>
+        <span>Second</span>
+        <span>Third</span>
+    </div>
+    <div class="container">
+        <span>First</span>
+        <span>Second</span>
+        <span>Third</span>
+    </div>
+    <hr>
+    <section>
+        <label for="">Choose Display Value</label>
+        <select id="display">
+            <option selected>block</option>
+            <option>inline-grid</option>
+            <option>inline-table</option>
+            <option>inline-flex</option>
+            <option>inline-block</option>
+            <option>none</option>
+            <option>grid</option>
+            <option>table-row</option>
+            <option>List-Item</option>
+            <option>table</option>
+        </select>
+    </section>
+    <script>
+        var div = document.querySelectorAll(".container")
+        var sel = document.getElementById("display");
+        function undateDisplay(){
+            div.forEach((item)=>{
+                item.style.display=sel.value;
+            });
+        }
+        sel.addEventListener('change',undateDisplay);
+        undateDisplay();
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contact{
+            display: grid;
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            grid-template-columns: [myLable] auto [myInput] 1fr;
+            grid-gap: 20px;
+            box-shadow: 4px 3px 15px 4px rgba(0, 0, 0, 0.3);
+        }
+        .contact label{
+            grid-column: myLable;
+            grid-row: auto;
+            position: relative;
+            top: 16px;
+            width: 100% auto;
+        }
+        .contact input{
+            grid-column: myInput;
+            grid-row: auto;
+            padding: 10px 12px;
+            font-size: 1.2rem;
+            width: 100% auto;
+        }
+        .contact .btn{
+            padding: 12px 14px;
+            background-color: teal;
+            border: none;
+            font-size: 1.2;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="" class="contact">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <label for="mobile">Mobile</label>
+        <input type="number" name="mobile" id="mobile">  
+        <button type="submit" class="btn">Submit</button>  
+    </form>
+</body>
+</html>

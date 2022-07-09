@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            animation: strech 2s ease-in-out 0 infinite alternate none;
+            animation-play-state: running;
+            /* animation-name: strech; */
+        }
+        .right-top{
+            top: 20px;
+            right: 20px;
+            background-color: orange;
+        }
+        .left-top{
+            top: 20px;
+            right: 20px;
+            background-color: orange;
+        }
+        .right-bottom{
+            top: 20px;
+            right: 20px;
+            background-color: orange;
+        }
+        .left-bottom{
+            top: 20px;
+            right: 20px;
+            background-color: slateblue;
+        }
+        @keyframes strech {
+            0%{
+                transform: scale(0.3);
+                background-color: gray;
+                border-radius: 100%;
+            }
+            50%{
+                background-color: magenta;
+            }
+            100%{
+                transform: scale(1.2);
+                background-color: tomato;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="right-top"></div>
+        <div class="left-top"></div>
+        <div class="right-bottom"></div>
+        <div class="left-bottom"></div>
+    </main>
+</body>
+</html>

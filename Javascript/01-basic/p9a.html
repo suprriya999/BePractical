@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>bobbule sort</h3>
+    <h3></h3>
+
+    <script>
+        var x =[6,5,2,3];
+        function bubblesort(){
+        let swap;
+        for(i=x.length; i>0; i--){
+            swap = false;
+
+            for(j=0; j < i-1; j++){
+                if(x[j] > x[j+1]){
+                [x[j],x[j+1]] = [x[j+1],x[j]];
+                swap = true;
+                }
+            }
+            if(!swap){
+                break;
+            }
+        }
+        return x;
+    }
+    let res = bubblesort(arr);
+    document
+    </script>
+</body>
+</html>
