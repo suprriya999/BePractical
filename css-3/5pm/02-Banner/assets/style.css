@@ -1,0 +1,36 @@
+
+/* 
+.commonBanner{
+    width: 800px;
+    height: 500px;
+
+} */
+.commonBanner>.search>[type]{   /*53 line */
+    height: 30px;
+    border-radius: 5px;
+}
+
+.banner2{
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner3{
+    background: linear-gradient(to right, orange, white, green);
+}
+.banner4{
+    background: url(../assets/images/image1.jpg) no-repeat left, url(../assets/images/image2.jpg) no-repeat right;
+    background-size: contain;
+}
+.banner5{
+    background: linear-gradient( rgba(255,165,0,0.5), rgba(219, 172, 172,0.5), rgba(1, 142, 1,0.5)),url(../assets/images/image1.jpg) no-repeat center ;
+    background-size: contain;
+}
+.banner7{
+    background: linear-gradient(orange,white, red);
+    background: -o-linear-gradient(yellow, red);
+    background: -moz-linear-gradient(black, red);
+    background: -webkit-linear-gradient(white, red);
+   
+}
