@@ -34,3 +34,26 @@
     background: -webkit-linear-gradient(white, red);
    
 }
+.banner8{
+    background-color: #808080;
+    line-height: 2;
+}
+.common{
+    height: 400px;
+    width: 400px;
+    border-radius: 2px, solid,#ccc;
+    margin: 30px;
+    padding: 30px;
+}
+.ex-1{
+    background: radial-gradient(orange,white,green);
+}
+.ex-2{
+    background: radial-gradient(circle,orange,white,green);
+}
+.ex-3{
+    background: radial-gradient(circle farthest-side,orange,white,green);
+}
+.ex-4{
+    background: repeating-radial-gradient(orange,white 10px,green 20px);
+}

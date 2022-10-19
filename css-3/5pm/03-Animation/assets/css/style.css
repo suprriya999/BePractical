@@ -1,0 +1,73 @@
+.animation1{
+    background: #fc466B;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 30px;
+    height: 300px;
+    /* animation: parmesh;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;  */
+    animation: parmesh 10s infinite;
+}
+.animation1>h1, .animation2>h1, .animation3>h1{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 3px 3px 3px #000;
+}
+@keyframes parmesh{
+    from{
+        background: #fc466B;
+    }
+    to{
+        background: #9546fc;
+    }
+}
+.animation2{
+    background: url(../images/img1.jpg) no-repeat center;
+    background-size: 100%;
+    height: 500px;
+    margin: 30px;
+    border-radius: 10px;
+    padding: 30px;
+    animation: aditya 10s infinite;
+    -webkit-animation: aditya 10s infinite;
+}
+@keyframes aditya{
+    from{background: url(../images/img1.jpg) no-repeat left;}
+    to{
+        background: url(../images/img2.jpg) no-repeat right;
+    }
+}
+.animation3{
+    background: #fc466B;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    animation: cssAnimation1 10s infinite;
+    animation-play-state: paused;
+}
+@keyframes cssAnimation1{
+    0%{
+        background: #fc466B;
+        top: 0px;
+        left: 600px;
+    }
+    25%{
+        background: cadetblue;
+        top: 0px;
+        left: 600Px;
+    }50%{
+        background: chartreuse;
+        top: 400px;
+        left: 600px;
+    }75%{
+        background: teal;
+        top: 400px;
+        left: 0px;
+    }100%{
+        background: #fc466b;
+        top: 0px;
+        left: 0px;
+    }
+}
