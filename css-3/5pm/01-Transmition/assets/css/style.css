@@ -1,0 +1,49 @@
+/*Transition*/
+.transition{
+    background-color: teal;
+    padding: 20px;
+    margin: 20px;
+    /* transition: 2000ms; */
+    transition: color 2s;
+    transition: background-color calc(3s + 1s);  /*for the backgrond effect*/
+}
+.transition:hover {
+    background-color: grey;
+    color: #fff;
+}
+.bgclip{
+    background-color: #fc6e50;
+    padding: 30px;
+    border-radius: 2px;
+    text-align: justify;
+    border: 5px dashed #954740;
+    transition: 2s;
+    
+    background-clip: content-box;
+    background-clip: border-box;
+    background-clip: padding-box;
+}
+.bgclip:hover{
+    border-radius: 50%;
+    text-align: center;
+}
+/*Transimition Functions*/
+    .common{
+        width: 400px;
+        height: 100px;
+        margin: 20px;
+        background-color: crimson;
+        color: #fff9;
+        transition:  width 2s;
+    }
+    .common:hover{
+        width: 100px;
+        background-color: yellow;
+    }
+    #d1{transition-timing-function: linear;}/*cubic-bezier(0,0,1,1)*/
+    #d2{transition-timing-function: ease-in;}/*cubic-bezier(0.42,0,1,1)*/
+    #d3{transition-timing-function: ease-out;}/*cubic-bezier(0,0,0.58,1)*/
+    #d4{transition-timing-function: ease;}/*cubic-bezier(0.25,0.1,0.25,1)*/
+    #d5{transition-timing-function: ease-in-out;}/*cubic-bezier(0.42,0,0.58,1)*/
+    #d6{transition-timing-function: steps(6, jump-start);}/* Jump-start, jump-end , start, end, jump-both,jump-none */
+    #d7{transition-timing-function: cubic-bezier(0.5, 0.7, 0.8,0.1);}/*cubic-bezier(0,0,1,1)*/
