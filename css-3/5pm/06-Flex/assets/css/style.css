@@ -77,3 +77,63 @@
     background-color: whitesmoke;
     width: 31.33%;
 }
+/*P5 & P6 htlm code*/
+.container3, .container4,.container5,.container6{
+    padding: 20px;
+}
+.container3>.item, .container4>.item,.container5>.item,.container6>.item{
+    width: 200px;
+    height: 100px;
+
+    flex-grow: 1;
+    /* flex: 1; */
+}
+.container3>.item:first-child{
+    flex: 2; /*it should double the width*/
+}
+.container3>.container:last-child{
+    flex: 3; 
+}
+/*p6 code*/
+.container4{
+    flex-wrap: nowrap; /*to display in only one row*/
+}
+.container4> .item{
+    flex-shrink: 1; /*to decrese the lenght*/
+}
+.container4>.item:first-child{
+    flex-shrink: 3;
+}
+.container4>.item:last-child{
+    flex-shrink: 5; /*giving first priority */
+}
+/*p7.html code*/
+.container5>.item:first-child{
+    /*by default html start from left as we write*/
+    order: 2;
+}
+.container5>.item:nth-child(2){
+    order: 3;
+}
+.container5>.item:last-child{
+    orphans: 1;
+}
+/*p8.html code*/
+.container6{
+    height: 400px;
+    justify-content: center;
+    align-items: baseline;
+    align-items: center;/*vertically center*/
+}
+.container6>.item:first-child{
+    font-size: 20px;
+    align-self: flex-start;
+}
+.container6>.item:nth-child(2){
+    font-size: 30px;
+    align-self: center;
+}
+.container6>.item:last-child{
+    font-size: 40px;  
+    align-self: flex-end; 
+}
