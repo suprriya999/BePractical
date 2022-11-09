@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-Basics</title>
+    <style>
+        table, th, td{
+            background-color: darkgrey;
+            border: 2px solid #000;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>Addition of two Numbers</center>
+    <hr>
+    <table border="1">
+        <tr>
+            <th><label for="">Enter first Number</label></th>
+            <td><input type="number" name="firstNumber" id="firstNumber"></td>
+        </tr>
+        <tr>
+            <th><label for="">Enter Second Number</label></th>
+            <td><input type="number" name="secondNumber" id="secondNumber"></td>
+        </tr>
+        <tr>
+            <th><button type="button" onclick="Addition();">Rusult</button></th>
+            <td><b id="result"></b></td>
+        </tr> 
+        <tr>
+            <th><label for="">Addition</label></th>
+            <td><b id="add"></b></td>
+        </tr> 
+        <tr>
+            <th><label for="">Substraction</label></th>
+            <td><b id="add"></b></td>
+        </tr> 
+        <tr>
+            <th><label for="">Multiplication</label></th>
+            <td><b id="add"></b></td>
+        </tr> 
+        <tr>
+            <th><label for="">Divisition</label></th>
+            <td><b id="add"></b></td>
+        </tr>
+       
+    </table>
+
+    <script>
+
+        function Addition(){
+        let firtNumber = document.getElementById("secondNumber").value;
+        let secondNumber = document.getElementById("firstNumber").value;
+        console.log(typeof firtNumber);
+        console.log(typeof secondNumber);
+        let sum = firtNumber + secondNumber;
+        // console.log(firstNumber);
+        // console.log(secondNumber);
+            
+       
+
+            document.getElementById("result").innerHTML = sum;
+
+      }
+    </script>
+</body>
+</html>
