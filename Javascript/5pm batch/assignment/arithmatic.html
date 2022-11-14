@@ -15,7 +15,7 @@
     </style>
 </head>
 <body>
-    <center>Addition of two Numbers</center>
+    <center>Arithmatic calculations of two Numbers</center>
     <hr>
     <table border="1">
         <tr>
@@ -36,33 +36,39 @@
         </tr> 
         <tr>
             <th><label for="">Substraction</label></th>
-            <td><b id="add"></b></td>
+            <td><b id="sub"></b></td>
         </tr> 
         <tr>
             <th><label for="">Multiplication</label></th>
-            <td><b id="add"></b></td>
+            <td><b id="mul"></b></td>
         </tr> 
         <tr>
             <th><label for="">Divisition</label></th>
-            <td><b id="add"></b></td>
+            <td><b id="div"></b></td>
+        </tr>
+        <tr>
+            <th><label for="">Moduls</label></th>
+            <td><b id="mod"></b></td>
         </tr>
        
     </table>
 
     <script>
-
         function Addition(){
-        let firtNumber = document.getElementById("secondNumber").value;
-        let secondNumber = document.getElementById("firstNumber").value;
-        console.log(typeof firtNumber);
-        console.log(typeof secondNumber);
+        let firtNumber = parseInt(document.getElementById("firstNumber").value);
+        let secondNumber = parseInt(document.getElementById("secondNumber").value);
+        // console.log(typeof firtNumber);
+        // console.log(typeof secondNumber);
         let sum = firtNumber + secondNumber;
-        // console.log(firstNumber);
-        // console.log(secondNumber);
-            
-       
-
-            document.getElementById("result").innerHTML = sum;
+        let sub = firtNumber - secondNumber;
+        let mul = firtNumber *  secondNumber;
+        let div = firtNumber / secondNumber;
+        let mod = firtNumber % secondNumber;
+        document.getElementById("add").innerHTML = sum;
+        document.getElementById("sub").innerHTML = sub;
+        document.getElementById("mul").innerHTML = mul;
+        document.getElementById("div").innerHTML = div;
+        document.getElementById("mod").innerHTML = mod;
 
       }
     </script>
