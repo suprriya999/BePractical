@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Basics</title>
+</head>
+<body>
+    <center>JS-Varible....!</center>
+    <hr>
+    <pre>
+        Data type Divided into two parts.
+        1)Primitive Data type
+        2)Non-Primitive / Derived Data types
+
+        1}Premitive data types: 
+            1.1)INT: (integer)- It accepts only round numbers value
+            1.2)FLOT: It accepts decimal values
+             1.3)Boolen- Either True/False
+            1.4)CHAR: character - It accepts single character
+            1.5)VOID: It returns null{empty} values
+
+        2}Non-Primitive / Derived Data types
+            2.1) Array
+            2.2)Structure
+            2.3)Union
+            2.4)Enum
+            2.5)Pointer
+            2.6)Function
+
+
+           Note: *In java script every thing is treated as object...
+           var is weaker signal and always have global scope variables
+           let and const are block scope(local scope) variables
+    </pre>
+    <hr>
+    <script>
+        var firstVarable; //Identifiers are nuthing but varable
+       // var, let & const are the keywords, is used for to delcere the variable
+        document.write(firstVarable, "<br>");
+        document.write("<b> Without Value: </b>",firstVarable,"</br>");
+        
+        firstVarable = "Hello Js"; //collection of charaters are called string
+        console.log(typeof firstVarable);
+        document.write("<b> With Value: </b>",firstVarable,"</br>");
+        document.write("<b> With Value: ",firstVarable,"</b></br>");
+        document.write("<b> With Value: "+firstVarable,"</b></br>");
+        document.write(`<b>With Value: ${firstVarable}</b><br>`);
+
+        // let status;
+        // status = typeof(firstVarable);
+        // document.write(status,"<br>");  
+        // or
+        document.write(typeof(firstVarable),"<br> <hr>");
+        
+        firstVarable = 10000;
+        console.log(typeof firstVarable);
+        document.write("<b> With Value: </b>",firstVarable,"</br>");
+        document.write("<b> With Value: ",firstVarable,"</b></br>");
+        document.write("<b> With Value: "+firstVarable,"</b></br>");
+        document.write(`<b>With Value: ${firstVarable}</b><br>`);
+        document.write(typeof(firstVarable),"<br><hr>");
+
+        firstVarable = 100.555555;
+        console.log(typeof firstVarable);
+        document.write("<b> With Value: </b>",firstVarable,"</br>");
+        document.write("<b> With Value: ",firstVarable,"</b></br>");
+        document.write("<b> With Value: "+firstVarable,"</b></br>");
+        document.write(`<b>With Value: ${firstVarable}</b><br>`);
+        document.write(typeof(firstVarable),"<br><hr>");
+
+        firstVarable = true;
+        console.log(typeof firstVarable);
+        document.write("<b> With Value: </b>",firstVarable,"</br>");
+        document.write("<b> With Value: ",firstVarable,"</b></br>");
+        document.write("<b> With Value: "+firstVarable,"</b></br>");
+        document.write(`<b>With Value: ${firstVarable}</b><br>`);
+        document.write(typeof(firstVarable),"<br><hr>");
+
+    </script>
+    
+</body>
+</html>

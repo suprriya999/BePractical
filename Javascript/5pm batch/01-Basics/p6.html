@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Basics</title>
+    
+    <style>
+        table, th, td{
+            background-color: darkgrey;
+            border: 2px solid #000;
+            border-collapse: collapse;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Condition Satatements...!</h1>
+    </center>
+    <hr>
+    <ol>
+        <li>Simple</li>
+        <li>If else</li>
+        <li>If else ladder</li>
+        <li>Switch Case</li>
+    </ol>
+    <hr>
+    <table border="1">
+        <tr>
+            <th><label for="">Enter first Number</label></th>
+            <td><input type="number" name="firstNumber" id="firstNumber"></td>
+        </tr>
+        <tr>
+            <th><label for="">Enter Second Number</label></th>
+            <td><input type="number" name="secondNumber" id="secondNumber"></td>
+        </tr>
+        <tr>
+            <th><button type="button" onclick="Addition();">Rusult</button></th>
+            <td>
+                <b id="result1"></b>
+                <b id="result2"></b>
+                <b id="result3"></b>
+                <b id="result4"></b>
+                <b id="result5"></b>
+                <b id="result6"></b>
+                <b id="result7"></b>
+                <b id="result8"></b>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+
+        function Addition(){
+        let firtNumber = +document.getElementById("firstNumber").value;
+        let secondNumber = parseInt(document.getElementById("secondNumber").value);
+        let sum = firtNumber + secondNumber;
+        
+        if(firtNumber == secondNumber){
+            document.getElementById("result1").innerHTML = "Numbers are equal";
+        }
+        else if(firtNumber === secondNumber){
+            document.getElementById("result2").innerHTML = "Numbers are identical equal";
+        }
+        else if(firtNumber !== secondNumber){
+            document.getElementById("result3").innerHTML = "Numbers are not identical equal";
+        }
+        else if(firtNumber > secondNumber){
+            document.getElementById("result4").innerHTML = "First Numbers is grater";
+        }
+        else if(firtNumber < secondNumber){
+            document.getElementById("result5").innerHTML = "Second Numbers is grater";
+        }
+        else if(firtNumber >= secondNumber){
+            document.getElementById("result6").innerHTML = "First Numbers is grater or equal to second number";
+        }
+        else if(firtNumber <= secondNumber){
+            document.getElementById("result7").innerHTML = "Second Numbers is grater or equal to second number";
+        }
+        else{
+            document.getElementById("result8").innerHTML = "Numbers are not equal";
+
+        }
+
+         //   document.getElementById("result").innerHTML = sum;
+
+      }
+    </script>
+</body>
+</html>

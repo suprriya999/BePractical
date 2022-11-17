@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+<body>
+    <b>Enter WeekDay Day: </b>
+    <input type="number" name="weekDay" id="weekDay">
+    <button type="button" onclick="checkDay();">Check WeekDay</button>
+
+    <script>
+        let firtNumber = document.getElementById("weekDay").value;
+        //document.write(`<h1>Switch case...1</h1>`);
+        function checkDay(){
+            switch (weekDay){
+                case 1 : alert("Today is Sunday...1");
+                            break;
+                case 2 : alert("Today is Monday...1");
+                            break;
+                case 3 : alert("Today is Tuesday...1");
+                            break;
+                case 4 : alert("Today is Wednesday...1");
+                            break;
+                case 5 : alert("Today is Thursday...1");
+                            break;
+                case 6 : alert("Today is Friday...1");
+                            break;
+                case 7 : alert("Today is Saterday...1");
+                            break;
+                default: alert("No Information for the day...!");
+                            break;
+
+            }
+        }
+            
+    
+    </script>
+
+</body>
+</html>
